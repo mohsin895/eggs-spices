@@ -3,7 +3,6 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { useCart } from '@/lib/cart-context'
-import { useAuth } from '@/lib/auth-context'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
@@ -19,7 +18,7 @@ import { computePricing } from '@/lib/checkout-pricing'
 
 export default function CheckoutPage() {
     const { items, totalPrice, clearCart, updateQuantity, removeItem } = useCart()
-    const { user } = useAuth()
+
 
     const [isProcessing, setIsProcessing] = useState(false)
     const [orderPlaced, setOrderPlaced] = useState(false)
@@ -34,9 +33,9 @@ export default function CheckoutPage() {
     const [settingsError, setSettingsError] = useState<string | null>(null)
 
     const [formData, setFormData] = useState({
-        phone: user?.phone || '',
-        name: user?.name || '',
-        address: user?.address || '',
+        phone:  '',
+        name:  '',
+        address:  '',
         city: '',
         postalCode: '',
     })
