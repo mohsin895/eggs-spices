@@ -124,7 +124,7 @@ export function CategorySlider() {
     return (
         <section id="featured-categories" className="py-12 md:py-16 px-4 md:px-6 bg-white">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-3xl font-bold mb-2 text-foreground">Featured Categories</h2>
+                <h2 className=" text-xl md:text-3xl font-bold mb-2 text-foreground">Featured Categories</h2>
                 <div className="w-12 h-1 bg-primary mb-8"></div>
 
                 <div className="relative">

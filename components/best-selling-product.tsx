@@ -57,7 +57,7 @@ function TopSellingCard({ product }: { product: UiProduct }) {
     }
 
     return (
-        <div className="relative bg-white rounded-lg border border-border p-5 flex gap-5">
+        <div className="relative bg-white rounded-lg border border-border p-5 md:p-5 flex flex-col md:flex-row gap-5">
             {product.badge && (
                 <span className="absolute -top-0 right-4 -translate-y-1/2 bg-red-600 text-white text-xs font-medium px-3 py-1.5 rounded-md flex items-center gap-1">
                     🏷 {product.badge === 'Sale' ? 'Best Selling' : product.badge}
@@ -65,12 +65,12 @@ function TopSellingCard({ product }: { product: UiProduct }) {
             )}
 
             <Link href={`/product/${product.slug}`} className="shrink-0">
-                <div className="relative w-28 h-28 md:w-32 md:h-32">
+                <div className="relative w-[250px] h-[300px] md:w-[250px] md:h-[300px]">
                     <Image
                         src={product.image}
                         alt={product.name}
                         fill
-                        className="object-contain"
+
                     />
                 </div>
             </Link>
@@ -141,7 +141,7 @@ export default function BestSellingProduct() {
         <section className="py-12 md:py-16 px-4 md:px-6 bg-[#f7f4ee]">
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-center items-center mb-8">
-                    <h2 className="text-3xl font-bold text-foreground">Top Selling Products</h2>
+                    <h2 className=" text-xl md:text-3xl font-bold text-foreground">Top Selling Products</h2>
                 </div>
 
                 {isLoading && (

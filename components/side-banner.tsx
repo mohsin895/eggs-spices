@@ -45,7 +45,7 @@ export function SideBanner() {
     return (
         <Link
             href={banner.link || '#'}
-            className="relative block w-full h-96 md:h-[370px] overflow-hidden rounded-lg bg-black group"
+            className="relative block w-full h-[280px] md:h-[370px] overflow-hidden rounded-lg bg-black group"
         >
             {/* Background image */}
             <Image

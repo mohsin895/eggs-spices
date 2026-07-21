@@ -98,7 +98,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
                 <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
                     <div className="grid md:grid-cols-2 gap-8 mb-12">
                         {/* Gallery */}
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col p-5 gap-4">
                             <div className="relative w-full h-96 bg-muted rounded-lg overflow-hidden">
                                 <Image
                                     src={activeImage || product.mainImage}
@@ -109,7 +109,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
                             </div>
 
                             {gallery.length > 1 && (
-                                <div className="flex gap-3">
+                                <div className="flex gap-3  p-5">
                                     {gallery.map((img, i) => (
                                         <button
                                             key={i}
@@ -167,16 +167,16 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
 
                             {/* Meta */}
                             <div className="mb-6 pb-6 border-b border-border space-y-2 text-sm">
-                                {product.code && (
-                                    <p className="text-muted-foreground">
-                                        <span className="font-semibold text-foreground">Code:</span> {product.code}
-                                    </p>
-                                )}
-                                {product.barcode && (
-                                    <p className="text-muted-foreground">
-                                        <span className="font-semibold text-foreground">Barcode:</span> {product.barcode}
-                                    </p>
-                                )}
+                                {/*{product.code && (*/}
+                                {/*    <p className="text-muted-foreground">*/}
+                                {/*        <span className="font-semibold text-foreground">Code:</span> {product.code}*/}
+                                {/*    </p>*/}
+                                {/*)}*/}
+                                {/*{product.barcode && (*/}
+                                {/*    <p className="text-muted-foreground">*/}
+                                {/*        <span className="font-semibold text-foreground">Barcode:</span> {product.barcode}*/}
+                                {/*    </p>*/}
+                                {/*)}*/}
                                 {product.unit && (
                                     <p className="text-muted-foreground">
                                         <span className="font-semibold text-foreground">Unit:</span> {product.unit}
@@ -241,6 +241,17 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
                         </div>
                     </div>
 
+                    {/* Description */}
+                    {/* Description */}
+                    {product.description && (
+                        <div className="mb-6 pb-6 border-b border-border bg-white p-5">
+                            <h3 className="text-sm font-semibold text-foreground mb-2">Description</h3>
+                            <div
+                                className="prose prose-sm max-w-none text-muted-foreground"
+                                dangerouslySetInnerHTML={{ __html: product.description }}
+                            />
+                        </div>
+                    )}
                     {/* Related Products */}
                     {product.relatedProducts.length > 0 && (
                         <div>

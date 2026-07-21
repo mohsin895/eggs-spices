@@ -114,6 +114,7 @@ export interface UiDiscountInfo {
     finalPrice: number
     savedAmount: number
     savedPercent: number
+
     daysRemaining: number | null
 }
 
@@ -126,6 +127,7 @@ export interface UiProductDetail {
     category: string | null
     brand: string | null
     unit: string | null
+    description: string | null
     box: number | null
     mainImage: string
     images: string[]
@@ -185,6 +187,7 @@ export function mapApiProductDetailToUi(product: ApiProductDetail): UiProductDet
         discount: buildDiscountInfo(product),
         warrenty: product.warrenty,
         guarantee: product.guarantee,
+        description: product.description,
         relatedProducts: product.related_products ?? [],
     }
 }
