@@ -56,6 +56,7 @@ export interface ApiProduct {
     main_image: string | null
     images: string[]
     warrenty: string | null
+    description: string | null
     guarantee: string | null
     is_new_arrival?: boolean
 }
