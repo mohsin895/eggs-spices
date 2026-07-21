@@ -11,7 +11,7 @@ const DOMAIN = process.env.NEXT_PUBLIC_API_BASE_URL ?? ""
 
 async function getPageContent(slug: string): Promise<string | null> {
     try {
-        const res = await fetch(`${DOMAIN}/settings`, { next: { revalidate: 3600 } })
+        const res = await fetch(`${DOMAIN}/settings`)
         if (!res.ok) return null
         const json = await res.json()
         const pages: { slug: string; content: string | null }[] = json.data ?? []
