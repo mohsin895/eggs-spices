@@ -88,7 +88,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
                             Home
                         </Link>
                         <span className="text-muted-foreground"> / </span>
-                        <Link href="/products" className="text-muted-foreground hover:text-primary">
+                        <Link href="/shop" className="text-muted-foreground hover:text-primary">
                             Products
                         </Link>
                         <span className="text-muted-foreground"> / {product.name}</span>
