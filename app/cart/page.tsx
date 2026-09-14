@@ -126,7 +126,7 @@ export default function CartPage() {
 
                 {/* Continue Shopping */}
                 <Link
-                  href="/products"
+                  href="/shop"
                   className="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary text-primary rounded-lg hover:bg-primary/5 font-medium mt-6"
                 >
                   <ArrowLeft className="w-4 h-4" />
