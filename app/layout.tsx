@@ -1,4 +1,3 @@
-
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import Script from 'next/script'
@@ -36,224 +35,69 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
 
     keywords: [
-        // Dhaka
-        'Dhaka Foodies',
-        'Dhaka Food',
-        'Dhaka Online Shopping',
-        'Dhaka Delivery',
-        'Dhaka Groceries',
-        'Online Grocery Dhaka',
-        'Dhaka Life',
-        'Dhaka Shopping',
-        'Dhaka Lifestyle',
-        'Gulshan',
-        'Banani',
-        'Dhanmondi',
-        'Uttara',
-        'Mohammadpur',
-        'Dhaka City',
-        'Dhaka Eats',
-        'Dhaka Bazaar',
-        'Inside Dhaka',
-        'Cash on Delivery Dhaka',
-        'Dhaka Home Chefs',
-        'Dhaka Moms',
-        'Dhaka Kitchen',
-        'Dhaka Diaries',
-        'Dhaka Food Blogger',
-        'Dhaka Restaurants',
-        'Dhaka Fitness',
-        'Dhaka Gym',
-        'Dhaka Healthy Food',
-        'Dhaka Organic',
-        'Dhaka Market',
-        'Dhaka Trends',
-        'Dhaka Ecommerce',
-        'Dhaka Small Business',
-        'Dhaka Entrepreneurs',
-        'Dhaka Food Lovers',
-        'Old Dhaka Food',
-        'Puran Dhaka',
-        'Dhaka Shopping Guide',
-        'Dhaka Online Bazaar',
-        'Dhaka Grocery Delivery',
-        'Dhaka Daily',
-        'Dhaka Fashion',
-        'Dhaka Corporate',
-        'Dhaka Zone',
-        'Dhaka Hub',
-
-        // Ghee & Oils
-        'Pabnar Ghee',
-        'Khati Ghee',
-        'Deshi Ghee',
-        'Pure Ghee',
-        'Ghee Lovers Dhaka',
-        'Shorishar Tel',
-        'Khati Shorishar Tel',
-        'Mustard Oil BD',
-        'Pabnar Shorishar Tel',
-        'Cold Pressed Oil Dhaka',
-        'Premium Olive Oil',
-        'Extra Virgin Olive Oil Dhaka',
-        'Pure Coconut Oil',
-        'Coconut Oil BD',
-        'Natural Oil',
-        'Premium Ghee',
-        'Wood Pressed Oil BD',
-        'Healthy Cooking Oil',
-        'Ghee BD',
-        'Mustard Oil',
-        'Coconut Oil',
-        'Olive Oil BD',
-        'Cooking With Ghee',
-
-        // Rice & Grocery
-        'Organic Rice Dhaka',
-        'Basmati Rice BD',
-        'Shada Basmati',
-        'Brown Rice Dhaka',
-        'Deshi Chal',
-        'Haate Shidhho Chal',
-        'Pure Food Dhaka',
-        'Safe Food Dhaka',
-        'Chemical Free Food',
-        'Khati Jinish Dhaka',
-        'Aromatic Rice BD',
-        'Traditional Rice BD',
-        'Daily Grocery Dhaka',
-        'Bazaar BD',
-        'Grocery Shopping Dhaka',
-        'Kitchen Ingredients',
-        'Pure Organic Dhaka',
-        'Healthy Rice Dhaka',
-        'Premium Rice',
-        'Deshi Khabar Dhaka',
-        'Ghoroya Khabar',
-        'Banglar Chal',
-        'Authentic Ghee',
-        'No Preservatives',
-        'Organic Groceries Dhaka',
-        'Farm Fresh Dhaka',
-        'Food Safety Dhaka',
-
-        // Spices
-        'Premium Spices Dhaka',
-        'Pure Masala',
-        'Garam Masala BD',
-        'Shahi Garam Masala',
-        'Holud Gura',
-        'Morich Gura',
-        'Jira Gura',
-        'Dhoniya Gura',
-        'Turmeric Powder BD',
-        'Chili Powder BD',
-        'Cumin Powder BD',
-        'Bangladeshi Spices',
-        'Pure Spices',
-        'Home Cooking Dhaka',
-        'Dhaka Chefs',
-        'Premium Masala',
-        'Cardamom BD',
-        'Cinnamon BD',
-        'Black Pepper BD',
-        'Ceylon Cinnamon Dhaka',
-        'Shahi Jira',
-        'Posto Dana',
-        'Alubokhara',
-        'Mouri',
-        'Star Moshla',
-        'Lobongo',
-        'Darchini',
-        'Tejpata',
-        'Pach Foron',
-        'Joyfol',
-        'Joytri',
-        'Sobuj Elach',
-        'Kalo Elach',
-        'White Pepper',
-        'Asto Jira',
-        'Mustard Seeds',
-        'Sesame Seeds',
-        'Asto Holud Shorisha',
-        'Kalijira',
-        'Black Seed BD',
-        'Kitchen Essentials Dhaka',
-        'Aromatic Spices',
-        'Spicy Food Dhaka',
-        'Flavor of Dhaka',
-        'Daily Masala',
-        'Pure Ingredients',
-        'Dhaka Catering',
-        'Cooking Ingredients',
-        'Home Chefs Dhaka',
-        'Spices of Bangladesh',
-
-        // Eggs, Nuts & Seeds
-        'Chia Seeds Dhaka',
-        'Chia Seed BD',
-        'Organic Eggs Dhaka',
-        'Deshi Dim',
-        'Premium Nuts Dhaka',
-        'Mixed Nuts BD',
-        'Healthy Seeds BD',
-        'Kathbadam',
-        'Almonds BD',
-        'Kaju Badam',
-        'Cashews Dhaka',
-        'Akhrot',
-        'Walnuts BD',
-        'Pesta',
-        'Pistachios Dhaka',
-        'Peanuts BD',
-        'Chine Badam',
-        'Lal Kismis',
-        'Kalo Kismis',
-        'Raisins BD',
-        'Chia Pudding Dhaka',
-        'Tokma',
-        'Isubgul',
-        'Psyllium Husk BD',
-        'Sagudana',
-        'Rajma BD',
-        'Kidney Beans',
-        'Kabuli Chhola',
-
-        // Health & Lifestyle
-        'Superfood Dhaka',
-        'Diet Food Dhaka',
-        'Keto Diet Dhaka',
-        'Weight Loss Dhaka',
-        'Fitness Food Dhaka',
-        'Healthy Snacks Dhaka',
-        'Protein Rich Dhaka',
-        'Healthy Lifestyle Dhaka',
-        'Dhaka Fitness Community',
-        'Dhaka Diet',
-        'Nutrition Dhaka',
-        'Energy Food',
-        'Brain Food',
-        'Healthy Heart',
-        'Immunity Booster Dhaka',
-        'Seed Mix',
-        'Raw Nuts Dhaka',
-        'Daily Nuts Dhaka',
-        'Breakfast Seeds',
-        'Organic Eggs',
-        'Vitamins BD',
-        'Eggs and Spices Dhaka',
+        'Dhaka Foodies', 'Dhaka Food', 'Dhaka Online Shopping', 'Dhaka Delivery',
+        'Dhaka Groceries', 'Online Grocery Dhaka', 'Dhaka Life', 'Dhaka Shopping',
+        'Dhaka Lifestyle', 'Gulshan', 'Banani', 'Dhanmondi', 'Uttara', 'Mohammadpur',
+        'Dhaka City', 'Dhaka Eats', 'Dhaka Bazaar', 'Inside Dhaka',
+        'Cash on Delivery Dhaka', 'Dhaka Home Chefs', 'Dhaka Moms', 'Dhaka Kitchen',
+        'Dhaka Diaries', 'Dhaka Food Blogger', 'Dhaka Restaurants', 'Dhaka Fitness',
+        'Dhaka Gym', 'Dhaka Healthy Food', 'Dhaka Organic', 'Dhaka Market',
+        'Dhaka Trends', 'Dhaka Ecommerce', 'Dhaka Small Business',
+        'Dhaka Entrepreneurs', 'Dhaka Food Lovers', 'Old Dhaka Food', 'Puran Dhaka',
+        'Dhaka Shopping Guide', 'Dhaka Online Bazaar', 'Dhaka Grocery Delivery',
+        'Dhaka Daily', 'Dhaka Fashion', 'Dhaka Corporate', 'Dhaka Zone', 'Dhaka Hub',
+        'Pabnar Ghee', 'Khati Ghee', 'Deshi Ghee', 'Pure Ghee', 'Ghee Lovers Dhaka',
+        'Shorishar Tel', 'Khati Shorishar Tel', 'Mustard Oil BD',
+        'Pabnar Shorishar Tel', 'Cold Pressed Oil Dhaka', 'Premium Olive Oil',
+        'Extra Virgin Olive Oil Dhaka', 'Pure Coconut Oil', 'Coconut Oil BD',
+        'Natural Oil', 'Premium Ghee', 'Wood Pressed Oil BD', 'Healthy Cooking Oil',
+        'Ghee BD', 'Mustard Oil', 'Coconut Oil', 'Olive Oil BD', 'Cooking With Ghee',
+        'Organic Rice Dhaka', 'Basmati Rice BD', 'Shada Basmati', 'Brown Rice Dhaka',
+        'Deshi Chal', 'Haate Shidhho Chal', 'Pure Food Dhaka', 'Safe Food Dhaka',
+        'Chemical Free Food', 'Khati Jinish Dhaka', 'Aromatic Rice BD',
+        'Traditional Rice BD', 'Daily Grocery Dhaka', 'Bazaar BD',
+        'Grocery Shopping Dhaka', 'Kitchen Ingredients', 'Pure Organic Dhaka',
+        'Healthy Rice Dhaka', 'Premium Rice', 'Deshi Khabar Dhaka', 'Ghoroya Khabar',
+        'Banglar Chal', 'Authentic Ghee', 'No Preservatives',
+        'Organic Groceries Dhaka', 'Farm Fresh Dhaka', 'Food Safety Dhaka',
+        'Premium Spices Dhaka', 'Pure Masala', 'Garam Masala BD',
+        'Shahi Garam Masala', 'Holud Gura', 'Morich Gura', 'Jira Gura',
+        'Dhoniya Gura', 'Turmeric Powder BD', 'Chili Powder BD', 'Cumin Powder BD',
+        'Bangladeshi Spices', 'Pure Spices', 'Home Cooking Dhaka', 'Dhaka Chefs',
+        'Premium Masala', 'Cardamom BD', 'Cinnamon BD', 'Black Pepper BD',
+        'Ceylon Cinnamon Dhaka', 'Shahi Jira', 'Posto Dana', 'Alubokhara', 'Mouri',
+        'Star Moshla', 'Lobongo', 'Darchini', 'Tejpata', 'Pach Foron', 'Joyfol',
+        'Joytri', 'Sobuj Elach', 'Kalo Elach', 'White Pepper', 'Asto Jira',
+        'Mustard Seeds', 'Sesame Seeds', 'Asto Holud Shorisha', 'Kalijira',
+        'Black Seed BD', 'Kitchen Essentials Dhaka', 'Aromatic Spices',
+        'Spicy Food Dhaka', 'Flavor of Dhaka', 'Daily Masala', 'Pure Ingredients',
+        'Dhaka Catering', 'Cooking Ingredients', 'Home Chefs Dhaka',
+        'Spices of Bangladesh', 'Chia Seeds Dhaka', 'Chia Seed BD',
+        'Organic Eggs Dhaka', 'Deshi Dim', 'Premium Nuts Dhaka', 'Mixed Nuts BD',
+        'Healthy Seeds BD', 'Kathbadam', 'Almonds BD', 'Kaju Badam',
+        'Cashews Dhaka', 'Akhrot', 'Walnuts BD', 'Pesta', 'Pistachios Dhaka',
+        'Peanuts BD', 'Chine Badam', 'Lal Kismis', 'Kalo Kismis', 'Raisins BD',
+        'Chia Pudding Dhaka', 'Tokma', 'Isubgul', 'Psyllium Husk BD', 'Sagudana',
+        'Rajma BD', 'Kidney Beans', 'Kabuli Chhola', 'Superfood Dhaka',
+        'Diet Food Dhaka', 'Keto Diet Dhaka', 'Weight Loss Dhaka',
+        'Fitness Food Dhaka', 'Healthy Snacks Dhaka', 'Protein Rich Dhaka',
+        'Healthy Lifestyle Dhaka', 'Dhaka Fitness Community', 'Dhaka Diet',
+        'Nutrition Dhaka', 'Energy Food', 'Brain Food', 'Healthy Heart',
+        'Immunity Booster Dhaka', 'Seed Mix', 'Raw Nuts Dhaka', 'Daily Nuts Dhaka',
+        'Breakfast Seeds', 'Organic Eggs', 'Vitamins BD', 'Eggs and Spices Dhaka',
         'Eggs',
     ],
 
-    authors: [
-        {
-            name: SITE_NAME,
-        },
-    ],
-
+    authors: [{ name: SITE_NAME }],
     creator: SITE_NAME,
     publisher: SITE_NAME,
 
+    // IMPORTANT: this is the site-wide fallback canonical.
+    // Every route (page.tsx / generateMetadata) that sets its OWN
+    // `alternates` object must include its own `canonical` too, or it
+    // will silently override this one with `alternates: {}` and no tag
+    // will render at all. Safer pattern: never set a partial
+    // `alternates` object in a child route without a canonical inside it.
     alternates: {
         canonical: SITE_URL,
     },
@@ -272,49 +116,29 @@ export const metadata: Metadata = {
 
     icons: {
         icon: [
-            {
-                url: '/icon-light-32x32.png',
-                media: '(prefers-color-scheme: light)',
-            },
-            {
-                url: '/icon-dark-32x32.png',
-                media: '(prefers-color-scheme: dark)',
-            },
-            {
-                url: '/icon.svg',
-                type: 'image/svg+xml',
-            },
+            { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
+            { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
+            { url: '/icon.svg', type: 'image/svg+xml' },
         ],
         apple: '/apple-icon.png',
     },
 
-    // Google Search Console verification
     verification: {
         google: 'D_Y7QDWmiE1DlbQIc9io0KlIwvVS2homl_nqomJ6z10',
     },
 
-    // Open Graph - Facebook, WhatsApp, LinkedIn, etc.
     openGraph: {
         type: 'website',
         locale: 'en_US',
         url: SITE_URL,
         siteName: SITE_NAME,
-
         title: SITE_TITLE,
-
         description: SITE_DESCRIPTION,
-
         images: [
-            {
-                url: '/og-image.jpg',
-                width: 1200,
-                height: 630,
-                alt: SITE_TITLE,
-            },
+            { url: '/og-image.jpg', width: 1200, height: 630, alt: SITE_TITLE },
         ],
     },
 
-    // Twitter / X
     twitter: {
         card: 'summary_large_image',
         title: SITE_TITLE,
@@ -322,134 +146,96 @@ export const metadata: Metadata = {
         images: ['/og-image.jpg'],
     },
 
-    // Facebook domain verification
+    // TODO: replace with your real Facebook domain verification code
+    // from Business Manager → Brand Safety → Domains. The placeholder
+    // string currently here does nothing.
     other: {
-        'facebook-domain-verification':
-            'your-fb-domain-verification-code-here',
+        'facebook-domain-verification': 'your-fb-domain-verification-code-here',
     },
 }
 
 export const viewport: Viewport = {
     colorScheme: 'light dark',
-
     themeColor: [
-        {
-            media: '(prefers-color-scheme: light)',
-            color: 'white',
-        },
-        {
-            media: '(prefers-color-scheme: dark)',
-            color: 'black',
-        },
+        { media: '(prefers-color-scheme: light)', color: 'white' },
+        { media: '(prefers-color-scheme: dark)', color: 'black' },
     ],
 }
 
 export default function RootLayout({
-    children,
-}: Readonly<{
-    children: React.ReactNode
-}>) {
+                                       children,
+                                   }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html
             lang="en"
             className={`${geistSans.variable} ${geistMono.variable} bg-background`}
         >
-            <head>
-                {/* Google Tag Manager */}
-                <Script id="gtm-script" strategy="afterInteractive">
-                    {`
+        <head>
+            <Script id="gtm-script" strategy="afterInteractive">
+                {`
 (function(w,d,s,l,i){
     w[l]=w[l]||[];
-    w[l].push({
-        'gtm.start': new Date().getTime(),
-        event:'gtm.js'
-    });
-
+    w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
     var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),
         dl=l!='dataLayer'?'&l='+l:'';
-
     j.async=true;
     j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-
     f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','${GTM_ID}');
 `}
-                </Script>
+            </Script>
 
-                {/* Facebook Pixel */}
-                <Script id="fb-pixel" strategy="afterInteractive">
-                    {`
+            <Script id="fb-pixel" strategy="afterInteractive">
+                {`
 !function(f,b,e,v,n,t,s)
 {
     if(f.fbq)return;
-
     n=f.fbq=function(){
-        n.callMethod ?
-            n.callMethod.apply(n,arguments) :
-            n.queue.push(arguments)
+        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
     };
-
     if(!f._fbq)f._fbq=n;
-
     n.push=n;
     n.loaded=!0;
     n.version='2.0';
     n.queue=[];
-
     t=b.createElement(e);
     t.async=!0;
     t.src=v;
-
     s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)
 }
-(
-    window,
-    document,
-    'script',
-    'https://connect.facebook.net/en_US/fbevents.js'
-);
-
+(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '${FB_PIXEL_ID}');
 fbq('track', 'PageView');
 `}
-                </Script>
-            </head>
+            </Script>
+        </head>
 
-            <body className="font-sans antialiased">
-                {/* Google Tag Manager - noscript */}
-                <noscript>
-                    <iframe
-                        src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-    height="0"
-width="0"
-style={{
-    display: 'none',
-        visibility: 'hidden',
-}}
-/>
-</noscript>
+        <body className="font-sans antialiased">
+        <noscript>
+            <iframe
+                src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+                height="0"
+                width="0"
+                style={{ display: 'none', visibility: 'hidden' }}
+            />
+        </noscript>
 
-{/* Facebook Pixel - noscript */}
-<noscript>
-    <img
-        height="1"
-        width="1"
-        style={{
-            display: 'none',
-        }}
-        src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-        alt=""
-    />
-</noscript>
+        <noscript>
+            <img
+                height="1"
+                width="1"
+                style={{ display: 'none' }}
+                src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+                alt=""
+            />
+        </noscript>
 
-<Providers>
-    <CartProvider>
-        {children}
-    </CartProvider>
-</Providers>
-</body>
-</html>
-)
+        <Providers>
+            <CartProvider>{children}</CartProvider>
+        </Providers>
+        </body>
+        </html>
+    )
 }
